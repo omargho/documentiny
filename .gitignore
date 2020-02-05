@@ -1,0 +1,10 @@
+.idea
+.nyc_output
+
+*~
+*.log
+
+/bower_components
+/node_modules
+/coverage/
+
