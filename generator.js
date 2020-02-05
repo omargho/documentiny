@@ -70,7 +70,8 @@ function createDoc() {
       url: json.homepage,
       version: json.version
     });
-    apidoc.setLogger(console.error);
+    apidoc.setLogger({error: console.error, debug: () => {}, verbose: () => {}});
+    app.log = {error: console.error};
     apidoc.setMarkdownParser(markdownParser);
     apidoc.setPackageInfos(packageInfo.get());
 
@@ -97,7 +98,7 @@ let cleanData = () => {
     }
     grouped[element.group].elements.push(element);
   }
-  //console.log(grouped);
+  console.log(grouped);
 
 };
 
