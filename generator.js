@@ -90,6 +90,7 @@ function createDoc() {
 let cleanData = () => {
   let {data} = createDoc({});
   data = JSON.parse(data);
+  data = removeDuplicates(data);
   //groupByGroups
   let grouped = {};
   for (let element of data) {
@@ -100,6 +101,21 @@ let cleanData = () => {
   }
   console.log(grouped);
 
+};
+
+
+let removeDuplicates = (data) => {
+  return data.filter(
+      (item,index) => {
+        item.id = item.group+item.name;
+        if (index===0) {
+          unique = [];
+        }
+        if (unique.indexOf(item.id) === -1) {
+          unique.push(item.id);
+          return item;
+        }
+      });
 };
 
 cleanData();
