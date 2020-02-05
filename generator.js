@@ -63,7 +63,7 @@ function createDoc() {
   try {
 
     // generator information
-    var json = JSON.parse(fs.readFileSync('/home/og/WebstormProjects/apidoc/package.json', 'utf8'));
+    var json = JSON.parse(fs.readFileSync('./example/apidoc.json', 'utf8'));
     apidoc.setGeneratorInfos({
       name: json.name,
       time: new Date(),
@@ -97,6 +97,7 @@ let cleanData = () => {
     }
     grouped[element.group].elements.push(element);
   }
+  //console.log(grouped);
 
 };
 
