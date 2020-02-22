@@ -1,0 +1,60 @@
+body {
+    background-color: red !important;
+}
+
+.content .code-examples {
+    background-color: #1E2224;
+    color: #fff;
+    margin: 0;
+    /*margin-top: -20px;*/
+    width: 50%;
+    float: right;
+    clear: right;
+    box-sizing: border-box;
+}
+
+.content .code-examples .defaultOpen {
+    display: block;
+}
+
+.code-examples > button > .defaultOpen {
+    background-color: transparent;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: fit-content;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    white-space: pre;
+}
+
+pre, blockquote {
+    /*width: 50%;*/
+    overflow: auto;
+    margin: 0px;
+    padding: 10px 28px;
+    margin-right: 50%
+}
+
+/*pre {*/
+/*    background-color: white;*/
+/*}*/

@@ -1,7 +1,7 @@
 /**
- * @api {get} /user/:id Read data of a User
+ * @api {get} /user/:id Read data of a User2
  * @apiVersion 0.3.0
- * @apiName GetUser
+ * @apiName GetUser2
  * @apiGroup User
  * @apiPermission admin
  *
@@ -12,12 +12,12 @@
  *     "Authorization: token 5f048fe"
  * @apiParam {Number} id The Users-ID.
  *
- * @apiExample {curl} Curl example
+ * @apiExample {shell} Curl
  * curl -H "Authorization: token 5f048fe" -i https://api.example.com/user/4711
- * @apiExample {js} Javascript example
+ * @apiExample {js} Javascript
  * const client = AcmeCorpApi('5f048fe');
  * const user = client.getUser(42);
- * @apiExample {python} Python example
+ * @apiExample {python} Python
  * client = AcmeCorpApi.Client(token="5f048fe")
  * user = client.get_user(42)
  *
@@ -115,12 +115,12 @@ function putUser() {
  *     "Authorization: token 5f048fe"
  * @apiParam {Number} id <code>id</code> of the user.
  *
- * @apiExample {curl} Curl example
+ * @apiExample {shell} Curl
  * curl -X DELETE -H "Authorization: token 5f048fe" -i https://api.example.com/user/4711
- * @apiExample {js} Javascript example
+ * @apiExample {javascript} Javascript
  * const client = AcmeCorpApi('5f048fe');
  * const user = client.deleteUser(42);
- * @apiExample {python} Python example
+ * @apiExample {python} Python
  * client = AcmeCorpApi.Client(token="5f048fe")
  * user = client.delete_user(42)
  *

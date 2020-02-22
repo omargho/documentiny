@@ -6,7 +6,6 @@
 // Current Success.
 // ------------------------------------------------------------------------------------------
 
-
 // ------------------------------------------------------------------------------------------
 // Current Errors.
 // ------------------------------------------------------------------------------------------
@@ -24,7 +23,6 @@
  *     }
  */
 
-
 // ------------------------------------------------------------------------------------------
 // Current Permissions.
 // ------------------------------------------------------------------------------------------
@@ -36,7 +34,6 @@
  *
  * @apiVersion 0.3.0
  */
-
 
 // ------------------------------------------------------------------------------------------
 // History.
@@ -92,7 +89,12 @@
  * @apiDescription In this case "apiErrorStructure" is defined and used.
  * Define blocks with params that will be used in several functions, so you dont have to rewrite them.
  *
- * @apiParam {String} name Name of the User.
+ * @apiParam (Query Parameter) {String} name Name of the User.
+ * @apiParam (Body Parameter) {String} email  Email of the User.
+ * @apiParam (Body Parameter) {Number} tel  tel of the User.
+ * @apiParam (Body Parameter) {Object} info         dltel of the User.
+ * @apiParam (Body Parameter) {String} info.test    tel of the User.
+ *
  *
  * @apiSuccess {String} id         The Users-ID.
  *
