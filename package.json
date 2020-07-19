@@ -12,7 +12,7 @@
   "dependencies": {
     "apidoc-core": "^0.11.1",
     "highlight.js": "^9.18.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "markdown-it": "^10.0.0",
     "path": "^0.12.7"
   }
